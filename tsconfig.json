@@ -1,0 +1,13 @@
+{
+    "files": [
+        "src/ts/main.ts", 
+        "src/ts/class/portafolio.ts", 
+        "src/ts/class/navbar.ts", 
+        "src/ts/class/footer.ts",
+        "src/ts/interfaces/producto.ts",
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es6"
+    }
+}

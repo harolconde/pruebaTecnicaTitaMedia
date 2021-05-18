@@ -1,0 +1,203 @@
+.section-banner {
+    align-items: center;
+    display: flex;
+    background-color: $bgprimary;
+    height: 540px;
+    @include responsive-movil-3 {
+        padding-top: 70px;
+    }
+    .container-banner {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 1rem 3rem;
+        text-align: center;
+        width: 100%;
+
+        .title {
+            color: $bgterciary;
+            font-family: "Montserrat", "Questrial", Verdana;
+            font-weight: 700;
+            font-size: 1.7rem;
+            letter-spacing: 10px;
+            margin: 8px;
+        }
+
+        .description-title {
+            color: $bgterciary;
+            font-size: .8rem;
+            text-align: center;
+            letter-spacing: 2.3px;
+            margin: 10px;
+        }
+
+        .btn-view {
+            color: $bgprimary;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: .6rem;
+            height: 25px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            width: 130px;
+        }
+    }
+}
+
+.section-productos {
+    padding-top: 20px;
+    .vista-productos{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 35px 0;
+        .btn-vista{
+            align-items: center;
+            background-color: $bgterciary;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            height: 30px;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px 0;
+            width: 30px;
+            transition: background-color 1s;
+            .span{
+                background-color: $bgprimary;
+                width: 12px;
+                height: 5px;
+            }
+            &.btn-multi{
+                padding: 6px 5px;
+                .span{
+                    display: block;
+                    width: 7px;
+                    height: 7px;
+                    margin: 0 1px;
+                }
+            }
+            &.btn-mono{
+                padding: 4px 5px;
+                .span{
+                    width: 15px;
+                    height: 5px;
+                }
+            }
+        }
+    }
+    .container-sub-menu{
+        margin: 20px 0 50px 0;
+        .list-items-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0 0 0;
+            @include responsive-movil {
+                display: none;
+            }
+
+            .item-menu {
+                //width: 100px;
+                list-style: none;
+                padding: 3px 25px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: .9rem;
+                margin: 0 3px;
+                color: $bgsecondary;
+                transition: 0.5s;
+                &.item-menu-logo {
+                    margin: 0 25px;
+
+                    .logo-buscar {
+                        width: 30px;
+                        height: auto;
+                    }
+                }
+            }
+
+            .item-menu:hover {
+                color: $bgprimary;
+            }
+        }
+    }
+    .container-portafolio {
+        box-sizing: border-box;
+        -moz-column-gap: 20px;
+        -webkit-column-gap: 20px;
+        column-gap: 20px;
+        -webkit-column-span: all;
+        column-span: all;
+        display: block;
+        height: auto;
+        margin: 1rem auto;
+        transition: width 1s;
+        .products {
+            break-inside: avoid;
+            max-width: 100%;
+            margin: 0 0 15px 0;
+            padding: 5px;
+            page-break-inside: avoid;
+            .img-producto {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    #portafolio{
+        transition-timing-function: linear;
+    }
+    .container-btn-more{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px;
+        width: 100%;
+        .btn-view-more{
+            background-color: $bgprimary;
+            color: $bgterciary;
+            cursor: pointer;
+            font-size: .8rem;
+            padding: 8px 20px;
+        }
+    }
+}
+.active{
+    background-color: $bgprimary;
+    color: $bgterciary !important;
+}
+.gridMono{
+    column-count: 1;
+    max-width: 60%;
+    width: 60%;
+}
+.gridMulti{
+    column-count: 3;
+    max-width: 60%;
+    width: 60%;
+    @include responsive-movil-2 {
+        column-count: 2;
+        max-width: 70%;
+        width: 70%;
+    }
+
+    @include responsive-movil-3 {
+        column-count: 1;
+        max-width: 80%;
+        width: 80%;
+    }
+}
+.grid-active{
+    background-color: $bgprimary !important;
+    transition-timing-function: linear;
+    .span{
+        transition-delay: linear;
+        background-color: $bgterciary !important;
+    }
+}
+

@@ -1,0 +1,106 @@
+// Barra de navegacion
+.header{
+    height: auto;
+    z-index: 1000;
+    background-color: $bgterciary;
+    @include responsive-movil {
+        position: fixed;
+    }
+    .nav-bar{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+        justify-content: space-around;
+        width: 100%;
+        z-index: 1001;
+        .logo-link{
+            display: flex;
+            align-items: center;
+            width: 150px;
+            height:auto;
+            .logo{
+                width: 100%;
+            }
+        }
+        .list-items-menu{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: display 1.5s;
+            @include responsive-movil {
+                display: none;
+                background-color: $bgterciary;
+                width: 100%;
+                position: absolute;
+                top: 0px;
+            }
+            .item-menu{
+                list-style: none;
+                padding: 3px 25px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: .9rem;
+                margin: 0 3px;
+                color: $bgsecondary;
+                @include responsive-movil {
+                    padding: 15px 0px;
+                }
+                &.item-menu-logo{
+                    margin: 0 25px;
+                    .logo-buscar{
+                        width: 30px;
+                        height: auto;
+                    }
+                    @include responsive-movil {
+                        display: none;
+                    }
+                }
+            }
+            .item-menu:hover{
+                color: $bgprimary;
+            }
+        }
+        .menu-hamburger{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            margin: 0 25px;
+            padding: 5px 25px;
+            @include responsive-movil{
+                display: flex;
+                margin: 0;
+                padding: 5px 0;
+            }
+            .container-logo{
+                .logo-hamburger{
+                    width: 40px;
+                    height: auto;
+                }
+                .logo-buscar {
+                    margin-left: 15px;
+                    width: 30px;
+                    height: auto;
+                }
+            }
+            
+        }
+        .active{
+            background-color: $bgprimary;
+            color: $bgterciary !important;
+        }
+    }
+}
+.menu-movil-active{ 
+    display: block;
+    transition-timing-function: ease-in;
+    transform: translate(0px, 70px);
+    @include responsive-movil {
+        display: block !important;
+    }
+    .item-menu{
+        width:100%;
+    }
+}

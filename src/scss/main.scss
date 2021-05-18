@@ -1,0 +1,12 @@
+// Estilos base y fuentes
+@import './base/fonts';
+@import './base/general';
+
+// Responsividad y varibles
+@import './lib/variables';
+@import './lib/responsive';
+
+// Layouts 
+@import './layouts/home';
+@import './layouts/navbar';
+@import './layouts/footer';

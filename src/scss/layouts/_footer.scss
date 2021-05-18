@@ -1,0 +1,40 @@
+.footer{
+    height: auto;
+    width: 100%;
+    .container-footer{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        .description-footer{
+            font-size: .8rem;
+            margin: 40px 10px;
+            width: 100%;
+            .remark{
+                color: $bgprimary;
+            }
+        }
+        .containers-logos-footer {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            .img-logo-footer {
+                height: auto;
+                list-style: none;
+                margin: 0 10px 40px 0;
+                width: 25px;
+                .img-logo{
+                    height: auto;
+                    width: 15px;
+                    &.logo-facebook{
+                        width: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

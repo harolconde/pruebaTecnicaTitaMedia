@@ -1,0 +1,17 @@
+@mixin responsive-movil {
+    @media (max-width: map-get($grid-breakpoints, "lg")) {
+        @content;
+    }
+}
+
+@mixin responsive-movil-2 {
+    @media (max-width: map-get($grid-breakpoints, "md")){
+        @content;
+    }
+}
+
+@mixin responsive-movil-3 {
+    @media (max-width: map-get($grid-breakpoints, "sm")){
+        @content;
+    }
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+button{
+    align-items: center;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    text-align: center;
+}
+header{
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", "Questrial", Verdana;
+}
+
+ul, li{
+    font-family: "Questrial", "Montserrat", Verdana;
+}
+p, span, small {
+    font-family: "Questrial", "Montserrat", Verdana;
+}
+section {
+    width: 100%;
+}
+main{
+    position: relative;
+    z-index: 999;
+}
